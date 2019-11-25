@@ -12,7 +12,7 @@
     <form #notesForm="ngForm" (keyup)="getNoteText(notesForm.value)" >
         <textarea [@showHide]="isVisible ? 'shown' : 'hidden'" class="notesTextArea" name="noteText" ngModel="{{ noteStoredText }}"></textarea>
     </form>
- 
+
 </div>
 
 
@@ -26,7 +26,8 @@
          Нова белешка
     </div>
 
-    <div class="newNoteDivLine" (click)>
+    <div class="newNoteDivLine" >
+      <!-- Да се додаде (click) -->
          Избриши
     </div>
 
