@@ -1,0 +1,49 @@
+
+<div id="mainAppDiv">
+        <!------------------ TOP AREA ----------------------->
+        <!-- Header -->
+        <app-header></app-header>
+        <!-- Google Search -->
+        <div class="row" class="ourRow">
+           <div class="col-6 offset-3">
+              <app-google-search></app-google-search>
+           </div>
+        </div>
+        <!-- Main Icons -->
+        <div class="row" class="ourRow">
+           <div class="col-8 offset-2">
+              <app-main-icons></app-main-icons>
+           </div>
+        </div>
+        <!--------------------------------------------------->
+
+        <!------------------ MIDDLE AREA -------------------->
+        <div class="row" class="ourRow">
+           <div class="col-8 offset-2">
+              <div class="row">
+                 <!-- Blocks -->        
+                 <div class="col-9">
+                    <app-blocks></app-blocks>
+                 </div>
+                 <!-- Notes -->        
+                 <div class="col-3" id="notes-wrapper">
+                    <app-notes></app-notes>
+                    <app-daily-texts></app-daily-texts>
+                 </div>
+                 
+              </div>
+           </div>
+        </div>
+        <!--------------------------------------------------->
+
+        <!------------------ BOTTOM AREA -------------------->
+        <div class="row" class="ourRow">
+           <div class="col-8 offset-2">
+              <!-- Weather -->
+              <app-weather></app-weather>
+           </div>
+        </div>
+        <!--Footer -->
+        <app-footer></app-footer>
+        <!--------------------------------------------------->
+</div>

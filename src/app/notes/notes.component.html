@@ -1,0 +1,47 @@
+<div id="notes">
+
+<!-- Note's Heading (icons) -->
+<div class="notesHeading">
+    <i class="material-icons rightNoteIcons" (click)="minimizeNote()" *ngIf="isVisible">remove</i>
+    <i class="material-icons  rightNoteIcons" (click)="maximizeNote()" *ngIf="!isVisible">add</i>
+    <i class="material-icons rightNoteIcons" (click)="maximizeOrMinimize()">more_horiz</i>
+</div>
+
+<!-- Note's Textarea -->
+<div class="notesText">
+    <form #notesForm="ngForm" (keyup)="getNoteText(notesForm.value)" >
+        <textarea [@showHide]="isVisible ? 'shown' : 'hidden'" class="notesTextArea" name="noteText" ngModel="{{ noteStoredText }}"></textarea>
+    </form>
+ 
+</div>
+
+
+<!-- New Note Modal-->
+<div class="newNoteModal" [@showHideModal]="isVisibleModal ? 'shown' : 'hidden'"  [style.display]="isPresent ? 'block' : 'none'">
+    <div class="newNoteDivHeadline">
+       <i class="material-icons rightNoteIcons" (click)="maximizeOrMinimize()">more_horiz</i>
+    </div>
+
+    <div class="newNoteDivLine">
+         Нова белешка
+    </div>
+
+    <div class="newNoteDivLine" (click)>
+         Избриши
+    </div>
+
+    <div class="newNoteDivLine" (click)="maximizeOrMinimize()">
+        Исклучи
+    </div>
+</div>
+
+<!-- Note Modal (Are you sure? yes/no) -->
+<div class="areYouSureModal" *ngIf="areYouSure">
+<div class="areYouSureBackground"></div>
+<div class="areYouSureText">Дали сигурно сакате да ја избришете белшката?</div>
+    <div class="yesNoWrapper">
+        <div class="yesAnswer">Да</div>
+        <div class="noAnswer">Не</div>
+    </div>
+</div>
+</div>

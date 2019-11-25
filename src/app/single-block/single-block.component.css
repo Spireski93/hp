@@ -1,0 +1,24 @@
+#singleBlock {
+    background-color: red;
+    height: 250px;
+    width: 200px;
+    margin-bottom: 9px;
+    border: 1px solid blue;
+}
+
+#headerInBlock {
+    background-color: rgb(202, 202, 202);
+    height: 33px;
+    display: flex;
+    padding-left: 8px;
+    align-items: center;
+    font-family: Arsenal;
+}
+
+.textInBlock {
+    background-color: rgb(236, 236, 236);
+    height: 31px; 
+    padding-left: 8px;
+    align-items: center;
+    font-family: Arsenal;
+}

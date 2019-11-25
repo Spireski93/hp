@@ -1,0 +1,21 @@
+#singleIcon {
+    width: 160px;
+    height: 150px;
+    background-color: gray;
+    padding: 10px 0px 0px 0px;
+    margin: 0px;
+    border: 1px solid red;
+}
+
+#siteLogo {
+    background-color: red;
+    height: 85px;
+    width: 85px;
+    margin: 10px 0px 10px 38px;
+}
+
+#siteName {
+    display: flex;
+    justify-content: center;  
+}
+
